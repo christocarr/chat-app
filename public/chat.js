@@ -10,8 +10,12 @@ const send = document.getElementById('send')
 //emit events
 send.addEventListener('click', () => {
   socket.emit('chat', {
-    message: message.nodeValue,
+    message: message.value,
     name: name.value
   })
 })
 
+//listen for events
+socket.on('chat', (data) => {
+  output.innerHTML += `<p><strong>${data.name}: </strong>${data.message}</p>`
+})
