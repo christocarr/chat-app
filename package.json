@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "acorn": "^7.1.1",
-    "express": "^4.19.2",
+    "express": "^4.20.0",
     "kind-of": "^6.0.3",
     "minimist": "^1.2.6",
     "socket.io": "^2.5.0"
